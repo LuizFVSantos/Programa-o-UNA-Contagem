@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double valor1, valor2, valor3, media;    
+		Scanner ler = new 
+    Scanner(System.in);
+    
+		System.out.println("Digite um numero:");
+		valor1 = ler.nextDouble();
+
+		System.out.println("Digite outro numero:");
+		valor2 = ler.nextDouble();
+		
+		System.out.println("Digite outro numero:");
+		valor3 = ler.nextDouble();
+		
+		media = (valor1+valor2+valor3)/3;
+		
+		System.out.print("a media é " + media);
+
+
+		
+		
+  }
+}
