@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double boleto1, boleto2, boleto3,boleto4, total, restante, salariob, salariol, desconto;    
+		Scanner ler = new 
+    Scanner(System.in);
+    
+		System.out.println("Digite o 1º boleto:");
+		boleto1 = ler.nextDouble();
+
+		System.out.println("Digite o 2º boleto:");
+		boleto2 = ler.nextDouble();
+
+		System.out.println("Digite o 3º boleto:");
+		boleto3 = ler.nextDouble();
+    
+		System.out.println("Digite o 4º boleto:");
+		boleto4 = ler.nextDouble();
+		
+		System.out.println("Digite o valor do salário bruto recebido ");
+		salariob = ler.nextDouble();
+        
+        System.out.println("Digite a porcentagem do desconto ");
+        desconto = ler.nextDouble();
+        
+        salariol = salariob - ((salariob*desconto)/100);
+    
+		total = boleto1+boleto2+boleto3+boleto4;
+		
+		System.out.println("O valor do seu saalrio liquido é " + salariol);
+		System.out.println("O TOTAL DAS CONTAS É: " + total);
+		System.out.print("O QUE RESTOU FOI " + (salariol - total));
+		
+		
+  }
+}
