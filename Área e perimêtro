@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double altura, largura, area, perimetro;    
+		Scanner ler = new 
+    Scanner(System.in);
+    
+		System.out.println("Digite a altura em cm:");
+		altura = ler.nextDouble();
+
+		System.out.println("Digite a largura em cm:");
+		largura = ler.nextDouble();
+		
+		area = altura*largura;
+		perimetro = (2*altura) + (2*largura);
+		
+		System.out.println("A area do retangulo é " + area + "cm" );
+		System.out.print("o perimetro do retangulo é " + perimetro + "cm");
+
+
+		
+		
+  }
+}
