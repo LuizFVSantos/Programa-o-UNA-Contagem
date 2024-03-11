@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double num, poten2, poten3, raiz2, raiz3;    
+		Scanner ler = new 
+    Scanner(System.in);
+    System.out.println("Digite um numero: ");
+    num = ler.nextDouble();
+    
+    poten2 = Math.pow(num,2);
+    poten3 = Math.pow(num,3);
+    raiz2 = Math.sqrt(num);
+    raiz3 = Math.cbrt(num);
+    System.out.println("Esse numero elevado ao quadrado é:" + poten2);
+    System.out.println("Esse numero elevado ao cubo é:" + poten3);
+    System.out.println("A raiz quadrada desse numero é:" + raiz2);
+    System.out.print("A raiz cubica desse numero é:" + raiz3);
+	}
+}
