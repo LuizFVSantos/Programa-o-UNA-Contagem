@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double salarioi, aumento, salariof;    
+		Scanner ler = new 
+    Scanner(System.in);
+	System.out.println("Digite o valor do salario: ");
+	salarioi = ler.nextDouble();
+	aumento = 25;
+	salariof = salarioi + ((salarioi*aumento)/100);
+	System.out.print("O valor do salario atual é " + salariof);
+	}
+}
