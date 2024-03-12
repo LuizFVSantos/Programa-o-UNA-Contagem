@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double A1, B1, C1, B2, delta, deltar, x1, x2;    
+    
+		Scanner ler = new Scanner(System.in);
+    System.out.print("Digite o valor de A: ");
+    A1 = ler.nextDouble();
+    System.out.print("Digite o valor de B: ");
+    B1 = ler.nextDouble();
+    System.out.print("Digite o valor de C: ");
+    C1 = ler.nextDouble();
+    B2 = Math.pow(B1,2);
+    delta = B2-4*A1*C1;
+    deltar = delta/2;
+    if (deltar <= 0) {
+        System.out.println("Impossivel realizar a conta");
+    } else {
+        x1 = -B1 + (Math.sqrt(deltar));
+        x2 = -B1 - (Math.sqrt(deltar));
+        System.out.print(" o valor de x1 é: " + x1 + " e o valor de x2 é: " + x2);
+        
+    }
+    
+	}
+}
