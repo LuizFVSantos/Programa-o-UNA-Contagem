@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double num1, num2;    
+    
+		Scanner ler = new Scanner(System.in);
+    System.out.println("Digite um numero: ");
+    num1 = ler.nextDouble();
+    System.out.println("Digite um numero: ");
+    num2 = ler.nextDouble();
+    if(num1 > num2) {
+        System.out.println ("Esse é o maior numero: " + num1);
+    } else if (num1 == num2) {
+        System.out.println("Os numeros são iguais!");
+    } else {
+        System.out.print("Os numero maior é: " + num2);
+    }
+    
+	}
+}
+    
