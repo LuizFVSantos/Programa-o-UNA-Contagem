@@ -1,0 +1,16 @@
+import java.util.*;
+import java.io.*;
+
+class Main {
+    public static void main(String[] args) {
+        double a1, b1, c1;
+        Scanner ler = new Scanner(System.in);
+//
+        System.out.println("Digite o valor do cateto adjacente (a)");
+        a1 = ler.nextDouble();
+        System.out.println("Digite o valor do cateto oposto (b)");
+        b1 = ler.nextDouble();
+        c1 = Math.sqrt((Math.pow(a1,2) + (Math.pow(b1,2))));
+        System.out.println("o valor da hipotenusa é:" + c1);
+    }
+}
