@@ -1,0 +1,21 @@
+import java.util.*;
+import java.io.*;
+
+class Main {
+    public static void main(String[] args) {
+        double gasolina, etanol, preferivel, valorComparado;
+        Scanner ler = new Scanner(System.in);
+//
+    System.out.println("Digite o valor da gasolina");
+    gasolina = ler.nextDouble();
+    System.out.println("Digite o valor do etanol");
+    etanol = ler.nextDouble();
+    valorComparado = gasolina*70/100;
+    // Condições 
+    if (etanol<=valorComparado){
+        System.out.println("Abastecer com Etanol");
+        } else{
+            System.out.println("Abastecer com Gasolina");
+        }
+    }
+}
