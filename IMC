@@ -1,0 +1,24 @@
+import java.util.*;
+import java.io.*;
+
+class Main
+{
+  public static void main (String[]args)
+  {
+	double altura, peso, imc, pesoIdeal, pesoIdealAjustado;
+	Scanner ler = new Scanner (System.in);
+//
+    System.out.println("Digite sua altura em centímetros");
+    altura = ler.nextDouble();
+    System.out.println("Digite seu peso em quilogramas");
+    peso = ler.nextDouble();
+//    
+    imc= (peso/(altura*altura))*10000;
+    pesoIdeal = 52+(0.75 * (altura - 152.4));
+    pesoIdealAjustado = ((peso - pesoIdeal)*0.25)+ pesoIdeal;
+//
+    System.out.println("Seu imc é: " + imc);
+    System.out.println("Seu peso ideal é: " + pesoIdeal);
+    System.out.println("Seu peso ideal ajustado é: " + pesoIdealAjustado);
+  }
+}
