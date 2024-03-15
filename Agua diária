@@ -1,0 +1,18 @@
+import java.util.*;
+import java.io.*;
+
+class Main
+{
+  public static void main (String[]args)
+  {
+	double agua, peso, totalAgua;
+	Scanner ler = new Scanner (System.in);
+//
+    System.out.println("Digite seu peso em quilogramas");
+    peso = ler.nextDouble();
+//    
+    totalAgua = (35*peso)/1000;
+//
+    System.out.println("Você deve beber: " + totalAgua + " litros de agua por dia");
+  }
+}
