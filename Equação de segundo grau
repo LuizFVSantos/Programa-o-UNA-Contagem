@@ -15,7 +15,7 @@ class Main {
     B2 = Math.pow(B1,2);
     delta = B2-4*A1*C1;
     deltar = delta/2;
-    if (deltar <= 0) {
+    if (deltar < 0) {
         System.out.println("Impossivel realizar a conta");
     } else {
         x1 = -B1 + (Math.sqrt(deltar));
